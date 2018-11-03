@@ -4,15 +4,15 @@
 #
 Name     : os-api-ref
 Version  : 1.5.0
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/6f/05/d84894a1986aeb939ec9afbe4a07c1689cc6b3a862aa0f63aa9b19844d58/os-api-ref-1.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6f/05/d84894a1986aeb939ec9afbe4a07c1689cc6b3a862aa0f63aa9b19844d58/os-api-ref-1.5.0.tar.gz
 Summary  : Sphinx Extensions to support API reference sites in OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: os-api-ref-python3
-Requires: os-api-ref-license
-Requires: os-api-ref-python
+Requires: os-api-ref-license = %{version}-%{release}
+Requires: os-api-ref-python = %{version}-%{release}
+Requires: os-api-ref-python3 = %{version}-%{release}
 Requires: PyYAML
 Requires: Sphinx
 Requires: openstackdocstheme
@@ -36,7 +36,7 @@ license components for the os-api-ref package.
 %package python
 Summary: python components for the os-api-ref package.
 Group: Default
-Requires: os-api-ref-python3
+Requires: os-api-ref-python3 = %{version}-%{release}
 
 %description python
 python components for the os-api-ref package.
@@ -59,14 +59,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533789692
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1541269973
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/os-api-ref
-cp LICENSE %{buildroot}/usr/share/doc/os-api-ref/LICENSE
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/os-api-ref
+cp LICENSE %{buildroot}/usr/share/package-licenses/os-api-ref/LICENSE
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -75,8 +75,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/os-api-ref/LICENSE
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/os-api-ref/LICENSE
 
 %files python
 %defattr(-,root,root,-)
