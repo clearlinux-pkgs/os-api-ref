@@ -1,6 +1,28 @@
 CHANGES
 =======
 
+1.6.0
+-----
+
+* Fixing duplicate label issue
+* readthedocs.io support
+* Update the remained discuss email
+* Change openstack-dev to openstack-discuss
+* Update sphinx extension logging
+* tests: Support Sphinx 1.8+
+* docs: Remove broken link
+* switch documentation job to new PTI
+* Fix sphinx-build invocation
+* import zuul job settings from project-config
+* Use 'sphinx.util.logging'
+* General overhaul of testing setup
+* Raise warning if top-level value is not a dict
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Use openstackdocstheme
+* Remove name from project stanza
+
 1.5.0
 -----
 
@@ -10,6 +32,7 @@ CHANGES
 * Add 'uuid' type
 * Fix Zuul jobs
 * Updated from global requirements
+* Fix UnicodeDecodeError
 * Updated from global requirements
 * doc: Remove deprecated call to sphinx.util.compat
 * Remove unconstraint package installation
