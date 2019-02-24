@@ -4,7 +4,7 @@
 #
 Name     : os-api-ref
 Version  : 1.6.0
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/8c/b5/5b54f6a31331936657c5fef2fbc36681eb29b0cef95f89cb53f2f5eb1e1b/os-api-ref-1.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/8c/b5/5b54f6a31331936657c5fef2fbc36681eb29b0cef95f89cb53f2f5eb1e1b/os-api-ref-1.6.0.tar.gz
 Summary  : Sphinx Extensions to support API reference sites in OpenStack
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1551028307
+export SOURCE_DATE_EPOCH=1551035226
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
