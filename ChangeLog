@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+1.6.1
+-----
+
+* Generate stable targets rather than random
+* Fix microversion test: handle different HTML renderings
+* Update hacking version
+* Remove support for py34
+
 1.6.0
 -----
 
