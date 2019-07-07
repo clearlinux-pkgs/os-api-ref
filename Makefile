@@ -1,5 +1,5 @@
 PKG_NAME := os-api-ref
-URL = https://files.pythonhosted.org/packages/0b/51/8c383264eb1147db0b59865bd47300d05a260bddd258e40b27d233c625be/os-api-ref-1.6.1.tar.gz
+URL = https://files.pythonhosted.org/packages/2e/71/67aed33b206fca5d8b716ca7bd79b2c1fc34c90ed08dab9afeb2595a9db2/os-api-ref-1.6.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

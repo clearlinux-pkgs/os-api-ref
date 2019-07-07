@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+1.6.2
+-----
+
+* Add Python 3 Train unit tests
+* Add support for Sphinx v2.1
+* Update Testing for Train
+* Replace git.openstack.org URLs with opendev.org URLs
+* Add support for Sphinx 2.0
+* OpenDev Migration Patch
+* trivial: Remove unused attribute
+
 1.6.1
 -----
 
