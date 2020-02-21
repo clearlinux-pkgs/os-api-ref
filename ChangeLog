@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+* [ussuri][goal] Drop python 2.7 support and testing
+* Use Ussuri jobs
+
 1.6.2
 -----
 
